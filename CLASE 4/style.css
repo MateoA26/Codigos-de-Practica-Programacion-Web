@@ -9,12 +9,12 @@ h1{
 
 /*Llamar a una etiqueta directo */
 body{
-    background-color: lawngreen;
+    background-color: palegreen;
 }
 
 /*Llamar a una clase */
 .titular{
-    color: aqua;
+    color: purple;
     font-size: 70px;
 }
 
@@ -22,4 +22,19 @@ body{
 #titular3{
     color: brown;
     font-size: 30px;
+    border: 5px solid lightseagreen;
+    border-radius: 10px;
 }
+
+/*****************/
+.borde{
+    border: 10px solid yellow;
+}
+.titular:hover{
+    color:beige;
+    background-color: yellowgreen
+}
+
+
+
+/****************************/

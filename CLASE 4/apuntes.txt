@@ -5,3 +5,27 @@ etiqueta{
 2- interno, se escribe en el head
 
 3- inline, se escribe en el propio html (mala practica)
+
+Puedo poner mas de dos clases, separadas por un espacio
+
+
+color hexadecimal:
+0 1 2 3 4 5 6 7 8 9 a b c d e f 
+red blue green (rgb)
+#000000
+00 rojo
+00 verde
+00 azul
+
+#ff0000 el rojo mas rojo
+#00ff00 el verde mas verde
+#0000ff el azul mas azul
+
+#ffff00 amarillo
+
+
+#000000 negro
+#ffffff blanco
+
+
+el * es un comodin, va a cambiar todo menos en donde este definido que tiene que ser otra cisa
