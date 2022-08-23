@@ -1,0 +1,7 @@
+1- externa, dos archivos distintos
+etiqueta{
+    propiedad:valor;
+}
+2- interno, se escribe en el head
+
+3- inline, se escribe en el propio html (mala practica)

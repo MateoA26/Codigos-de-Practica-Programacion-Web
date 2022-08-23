@@ -1,0 +1,25 @@
+/*  etiqueta{
+    propiedad: valor ;
+}    */
+
+h1{
+    color: grey;
+    font-size: 50px;
+}
+
+/*Llamar a una etiqueta directo */
+body{
+    background-color: lawngreen;
+}
+
+/*Llamar a una clase */
+.titular{
+    color: aqua;
+    font-size: 70px;
+}
+
+/*llamar a un ID */
+#titular3{
+    color: brown;
+    font-size: 30px;
+}
