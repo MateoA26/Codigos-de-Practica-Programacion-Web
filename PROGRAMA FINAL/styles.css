@@ -1,3 +1,7 @@
+.barra_menu{
+    position: sticky;
+    text-align: left;
+}
 .titulo_principal{
     text-align: center;
     color: red;
