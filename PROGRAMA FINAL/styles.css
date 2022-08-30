@@ -2,6 +2,9 @@ header{
     background-color: blue;
     border: 10px solid red;
 }
+.barra_menu{
+    display: inline;
+}
 li{
     list-style-type: none;
     display: inline;
