@@ -2,8 +2,10 @@ header{
     background-color: blue;
     border: 10px solid red;
 }
-ul{
+.li{
     list-style-type: none;
+    display: inline;
+    margin:5px;
 }
 .titulo_principal{
     text-align: center;
