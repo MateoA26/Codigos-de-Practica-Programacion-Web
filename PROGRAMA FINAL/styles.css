@@ -1,3 +1,7 @@
+header{
+    background-color: blue;
+    border: 10px solid red;
+}
 ul{
     list-style-type: none;
 }
