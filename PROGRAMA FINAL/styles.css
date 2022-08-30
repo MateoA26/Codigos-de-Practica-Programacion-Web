@@ -1,20 +1,5 @@
-header{
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    grid-template-rows: 50px;
-    grid-gap: 5%;
-    background-color: blue;
-    color: white;
-  }
 .barra_menu{
-    position: sticky;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    font-size: 20px;
-    color: black;
+    list-style-type: none;
 }
 .titulo_principal{
     text-align: center;
