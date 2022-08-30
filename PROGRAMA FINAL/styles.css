@@ -1,6 +1,20 @@
+header{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 50px;
+    grid-gap: 5%;
+    background-color: black;
+    color: white;
+  }
 .barra_menu{
     position: sticky;
-    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: rgb(60, 159, 230);
+    font-size: 20px;
 }
 .titulo_principal{
     text-align: center;
