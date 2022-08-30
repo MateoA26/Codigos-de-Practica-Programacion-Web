@@ -2,7 +2,7 @@ header{
     background-color: blue;
     border: 10px solid red;
 }
-.li{
+li{
     list-style-type: none;
     display: inline;
     margin:5px;
