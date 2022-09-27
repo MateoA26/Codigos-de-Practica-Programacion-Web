@@ -55,3 +55,22 @@ body{
     background-color: red;
     color: blue;
 }
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: lightblue;
+    }
+    .container-fiestas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: rosybrown;
+    }
+    .container-fiestas{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+}
