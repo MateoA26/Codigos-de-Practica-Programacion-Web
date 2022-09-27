@@ -45,6 +45,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
     gap: 5px ;
+    margin-top: 50px;
 }
 .grid-item{
     background-color: rgba(255, 255, 255, 0.8);
