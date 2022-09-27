@@ -6,6 +6,7 @@ header{
 .barra-menu{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+    width: 100%;
 }
 .Titulos{
     margin: 0px;
@@ -13,6 +14,7 @@ header{
 }
 #buscador {
     justify-content: right;
+    
 }
 li{
     list-style-type: none;
