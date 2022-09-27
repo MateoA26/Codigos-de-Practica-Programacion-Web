@@ -40,6 +40,12 @@ body{
     padding: 10px;
     gap: 5px ;
 }
+.container-conciertos{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 5px ;
+}
 .grid-item{
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 20px;
