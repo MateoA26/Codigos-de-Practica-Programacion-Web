@@ -77,6 +77,10 @@ body{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    .comprar:hover{
+        background-color: red;
+        color: blue;
+    }
   }
 
 @media only screen and (max-width: 600px) {
@@ -90,6 +94,10 @@ body{
     .container-conciertos{
         display: grid;
         grid-template-columns: 1fr ;
+    }
+    .comprar:hover{
+        background-color: red;
+        color: blue;
     }
 }
 a{
