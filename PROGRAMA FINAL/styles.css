@@ -73,6 +73,10 @@ body{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    .container-conciertos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
   }
 
 @media only screen and (max-width: 600px) {
@@ -80,6 +84,10 @@ body{
         background-color: rosybrown;
     }
     .container-fiestas{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .container-conciertos{
         display: grid;
         grid-template-columns: 1fr ;
     }
