@@ -7,9 +7,10 @@
     <title>TicketAr</title>
     
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
     <header>
-        <div class="barra_menu" >
+        
             <div class="Titulos">
                 <ul>
                     <li> <a href="index.html#inicio"> Inicio </a></li>
@@ -17,16 +18,36 @@
                     <li> <a href="index.html#conciertos"> Conciertos </a></li>
                     <li> Deportes </li>
                     <li> Contacto </li>
-                    <li><input type="search" name="buscador" placeholder="Busque un evento" class="navegador1" id="buscador"> </li>
+                    <li><input type="search" name="buscador" placeholder="Busque un evento" id="buscador"></li>
+                    <li style="float:right"> <img src="./IMAGENES/Concierto Bad Bunny .png" class="logo" ></li>
                 </ul>
-                
             </div>
-        </div>
-        
-        </header>
 
+    </header> 
+    
     <body>
-        <h1 class="titulo_principal" id="inicio"> TicketAr</h1>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+            <div class="carousel-inner" id="inicio">
+              <div class="carousel-item active">
+                <img src="./IMAGENES/Concierto Duki.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./IMAGENES/Fiesta Napoles.jpg.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./IMAGENES/Fiesta Bresh.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
         <div class="container-fiestas" id="fiestas">
             <div class="grid-item"><img src="./IMAGENES/Fiesta Bresh.png" alt="logo-bresh" class="imagenes-fiestas"> 
                 <h2> Fiesta BRESH</h2>
