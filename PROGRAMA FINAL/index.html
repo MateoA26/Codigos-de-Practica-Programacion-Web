@@ -11,7 +11,46 @@
     <link rel="stylesheet" href="styles.css">
 </head>
     <header>
-            <div id="menu">
+        <nav class="navbar-expand-lg navbar navbar-dark fixed-top" style="background-color: #0004ff;">
+            <div class="container-fluid">
+              <div > <img src="./IMAGENES/LOGO M.png" class="logo" ></div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" style="background-color: #0004ff;">
+                <div class="offcanvas-header" style="background-color: #141a7a;">
+                
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="background-color:#0004ff ;">
+                  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3" >
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="index.html#fiestas">Fiestas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="index.html#conciertos">
+                        Conciertos
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link active" href="index.html#Contacto">
+                        Contacto
+                       </a>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Busca un evento" aria-label="Search">
+                    <button class="btn btn-success" type="submit" style="background-color: #ff7500;  font-weight: bold;">Buscar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+         
+            <!-- <div id="menu">
                 <ul>
                     <li> <a href="index.html#inicio" class="letra"> Inicio </a></li>
                     <li> <a href="index.html#fiestas" class="letra"> Fiestas</a> </li>
@@ -20,7 +59,7 @@
                     <li><input type="search" name="buscador" placeholder="Busque un evento" id="buscador"></li>
                     <li style="float:right"> <img src="./IMAGENES/LOGO M.png" class="logo" ></li>
                 </ul>
-            </div>
+            </div> -->
     </header> 
     
     <body>
