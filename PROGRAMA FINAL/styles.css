@@ -26,25 +26,16 @@ li{
     margin: 10px;
     margin-top: 20px;
     justify-content: space-between;
-} */
+}
 
+/************************** Termina el Header (buscador) ******************************/
 
-/* Termina el Header (buscador) */
 #imagenes-banner{
     width: 100%;
-    height: 600px;
+    height: 500px;
 }
-body{
-    background-color: beige;
-    margin: 0px;
-    padding: 0px;
-}
-h2{
-    text-align: center;
-}
-p{
-    text-align: center;
-}
+
+/************************** Contenedores de las Fiestas y Conciertos ********************/
 
 .container-fiestas{
     display:grid;
@@ -70,6 +61,19 @@ p{
     width: 100%;
     height: 250px;
     margin: 0;
+}
+
+/*********************** Decoración del texto y cuando pasas por arriba ***************************/
+
+
+body{
+    background-color: beige;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2,p{
+    text-align: center;
 }
 .letra{
     color: #ff7500;
@@ -98,6 +102,19 @@ a:hover{
     font-size: 17px;
     font-weight: bold;
 }
+.card{
+    background-color: beige;
+}
+.list-group-item{
+    background-color: beige;
+}
+.card-img-top{
+    width: 100%;
+    height: 450px;
+}
+
+/************************************** Parte final de Contacto y redes ********************************/
+
 footer{
     margin-top: 70px;
     background-color: beige;
@@ -114,6 +131,9 @@ footer{
     height: 100px;
     gap: 30px;
 }
+
+/************************************** Adaptación para Telefono y Tablet ********************************/
+
 @media only screen and (max-width: 768px) {
     body {
       background-color: beige;
@@ -183,13 +203,4 @@ footer{
     }
     
 }
-.card{
-    background-color: beige;
-}
-.list-group-item{
-    background-color: beige;
-}
-.card-img-top{
-    width: 100%;
-    height: 450px;
-}
+
