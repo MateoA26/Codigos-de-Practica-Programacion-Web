@@ -58,12 +58,33 @@
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Lugar: Estancias del Pilar</li>
-              <li class="list-group-item">Precio: 1500$</li>
               <li class="list-group-item">16 de Septiembre</li>
             </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+            <div class="card-body" >
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Tipo de Entrada</th>
+                    <th>Precio y Cantidad</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Preventa 1</td>
+                    <td><input type="radio" onclick="sumaProductos(1500, 'Combinado roll x24')">$1500</td>
+                  </tr>
+                  <tr>
+                    <td>Entrada General</td>
+                    <td><input type="radio"onclick="sumaProductos(2000, 'Combinado roll x48')">$2000</td>
+                  </tr>
+                  <tr>
+                    <td>Entrada VIP</td>
+                    <td><input type="radio" onclick="sumaProductos(4000, 'Combinado roll x60')">$4000</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                </tfoot>
+              </table>
             </div>
           </div>
     </main>
