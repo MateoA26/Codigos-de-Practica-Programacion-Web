@@ -22,7 +22,7 @@ ul{
 li{
     display: inline;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     margin: 10px;
     margin-top: 20px;
     justify-content: space-between;
@@ -204,8 +204,6 @@ footer{
         display: grid;
         grid-template-columns: 1fr;
     }
-    .logo{
-        height: 100px;
-    }
+    
 }
 
