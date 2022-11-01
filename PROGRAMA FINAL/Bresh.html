@@ -75,15 +75,15 @@
                 <tbody>
                   <tr>
                     <td>Preventa 1</td>
-                    <td><input type="radio" onclick="sumaProductos(2300, 'Combinado roll x24')">$2300</td>
+                    <td><input type="number" min="0" onchange="sumaProductos(2300, 'Preventa 1')" id="ventas">$2300</td>
                   </tr>
                   <tr>
                     <td>Entrada General</td>
-                    <td><input type="radio"onclick="sumaProductos(4600, 'Combinado roll x48')">$4600</td>
+                    <td><input type="number"  min="0" onchange="sumaProductos(4600, 'Entrada General')" id="ventas">$4600</td>
                   </tr>
                   <tr>
                     <td>Entrada VIP</td>
-                    <td><input type="radio" onclick="sumaProductos(5700, 'Combinado roll x60')">$5700</td>
+                    <td><input type="number"  min="0" onchange="sumaProductos(5700, 'Entrada VIP')"id="ventas" >$5700</td>
                   </tr>
                   <td> <a href="./carrito.html"><button class="btn btn-success" style="background-color: #ff7500;  font-weight: bold;">Hace click para ir a pagar</button></a></td>
                   <td> </td>
@@ -111,7 +111,10 @@
   function sumaProductos(Valoritem, Producto) {
       arrayProducto.push(Producto)
     Total = Total + Valoritem
-    document.getElementById("elTotal").innerHTML = "TOTAL: " + "$" + Total; 
+    let cantidad = document.getElementById("ventas").value
+    console.log(cantidad)
+    console.log(cantidad * Valoritem)
+    document.getElementById("elTotal").innerHTML = "TOTAL: " + "$" + cantidad * Valoritem; 
     console.log(arrayProducto);
     document.getElementById("valorProducto").value = Total
     document.getElementById("listaProductos").value=arrayProducto
