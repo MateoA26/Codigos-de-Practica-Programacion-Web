@@ -31,11 +31,6 @@
                   <a class="nav-link active" href="index.html#fiestas">Fiestas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="index.html#conciertos">
-                    Conciertos
-                  </a>
-                </li>
-                <li class="nav-item">
                    <a class="nav-link active" href="index.html#Contacto">
                     Contacto
                    </a>
@@ -44,10 +39,6 @@
                   <img src="./IMAGENES/carrito-de-compras.png" alt="carrito" id="carritoCompra">
                </li>
               </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Busca un evento" aria-label="Search">
-                <button class="btn btn-success" type="submit" style="background-color: #ff7500;  font-weight: bold;">Buscar</button>
-              </form>
             </div>
           </div>
         </div>
@@ -61,7 +52,7 @@
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Lugar: GEBA</li>
-              <li class="list-group-item">22 de Septiembre</li>
+              <li class="list-group-item">22 de Septiembre a la 01:00</li>
             </ul>
             
             <div class="card-body" >
@@ -69,60 +60,22 @@
                 <thead>
                   <tr>
                     <th>Tipo de Entrada</th>
-                    <th>Precio y Cantidad</th>
+                    <th>Precio </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Preventa 1</td>
-                    <td><input type="number" min="0" onchange="sumaProductos(2300, 'Preventa 1')" id="ventas">$2300</td>
-                  </tr>
-                  <tr>
                     <td>Entrada General</td>
-                    <td><input type="number"  min="0" onchange="sumaProductos(4600, 'Entrada General')" id="ventas">$4600</td>
+                    <td>$2300</td>
                   </tr>
                   <tr>
                     <td>Entrada VIP</td>
-                    <td><input type="number"  min="0" onchange="sumaProductos(5700, 'Entrada VIP')"id="ventas" >$5700</td>
+                    <td>$4600</td>
                   </tr>
-                  <td> <a href="./carrito.html"><button class="btn btn-success" style="background-color: #ff7500;  font-weight: bold;">Hace click para ir a pagar</button></a></td>
+                  <td> <a href="./carrito.html"><button class="btn btn-success" style="background-color: #141a7a;  font-weight: bold;">Hace click para ir a comprar</button></a></td>
                   <td> </td>
                   <td> </td>
-                </tbody>
-                <tfoot>
-                </tfoot>
-              </table>
-            </div>
-          </div>
-          <div class="d-grid gap-2 col-6 mx-auto" id="carrito">
-            <button class="btnnbtn-primary" type="button" disabled>
-                <div class="zona_calculo2" id="calculadora"></div>
-                 <div id="elTotal">  CARRITO   TOTAL: 0 Pesos</div>
-                 <button type="button" class="btn btn-primary " onclick="Limpiar()">Vaciar Carrito</button>
-                 <button type="submit" class="submit">ENVIAR</button>
-            </button>   
-        </div>  
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<script>
-  let arrayProducto =[]
-  let Total = 0
-  function sumaProductos(Valoritem, Producto) {
-      arrayProducto.push(Producto)
-    Total = Total + Valoritem
-    let cantidad = document.getElementById("ventas").value
-    console.log(cantidad)
-    console.log(cantidad * Valoritem)
-    document.getElementById("elTotal").innerHTML = "TOTAL: " + "$" + cantidad * Valoritem; 
-    console.log(arrayProducto);
-    document.getElementById("valorProducto").value = Total
-    document.getElementById("listaProductos").value=arrayProducto
-    return Total}
-
-  function Limpiar() {
-    Total=0
-    document.getElementById("elTotal").innerHTML = "TOTAL: " + "$" + 0; }
-
-</script>
 </html>

@@ -74,9 +74,34 @@ body{
     margin: 0px;
     padding: 0px;
 }
+.card-body{
+    width: 100%;
+}
+th{
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff7500;
 
-h2,p{
+}
+td{
+    font-size: 15px;
+    font-weight: bold;
+
+}
+h2{
     text-align: center;
+    font-weight: bold;
+}
+h4{
+    text-align: center;
+    font-weight: bold;
+    padding: 22px;
+}
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
 }
 .letra{
     color: #ff7500;
@@ -210,3 +235,12 @@ footer{
     }
 }
 
+h5{
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+
+  
