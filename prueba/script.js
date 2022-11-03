@@ -218,3 +218,7 @@ DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 // Inicio
 renderizarProductos();
 renderizarCarrito();
+
+
+
+//https://programadorwebvalencia.com/javascript-ejemplo-carrito-de-compra/
