@@ -1,3 +1,5 @@
+
+
 // Variables
 const baseDeDatos = [
     {
@@ -81,7 +83,7 @@ const DOMitems = document.querySelector('#items');
 const DOMcarrito = document.querySelector('#carrito');
 const DOMtotal = document.querySelector('#total');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
-const DOMbotonFinalizar = document.querySelector('#boton-finalizar');
+const DOMbotonFinalizar = document.querySelector('#liveToastBtn');
 
 function renderizarProductos() {
     baseDeDatos.forEach((info) => {
@@ -211,3 +213,12 @@ DOMbotonFinalizar.addEventListener('click', finalizarCompra);
 renderizarProductos();
 renderizarCarrito();
 
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+if (toastTrigger) {
+  toastTrigger.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
