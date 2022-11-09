@@ -110,7 +110,7 @@ function renderizarProductos() {
         miNodoBoton.classList.add('btn', 'btn-primary');
         miNodoBoton.textContent = '+';
         miNodoBoton.setAttribute('marcador', info.id);
-        miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
+        miNodoBoton.addEventListener('click', añadirProductoAlCarrito);
 
         miNodoCardBody.appendChild(miNodoImagen);
         miNodoCardBody.appendChild(miNodoTitle);
@@ -122,7 +122,7 @@ function renderizarProductos() {
 }
 
 
-function anyadirProductoAlCarrito(evento) {
+function añadirProductoAlCarrito(evento) {
 
     carrito.push(evento.target.getAttribute('marcador'))
 
@@ -213,12 +213,3 @@ DOMbotonFinalizar.addEventListener('click', finalizarCompra);
 renderizarProductos();
 renderizarCarrito();
 
-const toastTrigger = document.getElementById('liveToastBtn')
-const toastLiveExample = document.getElementById('liveToast')
-if (toastTrigger) {
-  toastTrigger.addEventListener('click', () => {
-    const toast = new bootstrap.Toast(toastLiveExample)
-
-    toast.show()
-  })
-}
