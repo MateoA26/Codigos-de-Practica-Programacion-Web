@@ -1,23 +1,4 @@
-const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 
-const alert = (message, type) => {
-  const wrapper = document.createElement('div')
-  wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-    `   <div>${message}</div>`,
-    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    '</div>'
-  ].join('')
-
-  alertPlaceholder.append(wrapper)
-}
-
-const alertTrigger = document.getElementById('liveAlertBtn')
-if (alertTrigger) {
-  alertTrigger.addEventListener('click', () => {
-    alert('Su compra ha sido guardada con exito!', 'success')
-  })
-}
 
 // Variables
 const baseDeDatos = [
@@ -42,13 +23,13 @@ const baseDeDatos = [
     {
         id: 4,
         nombre: 'Entrada VIP   La Porteña',
-        precio: 1000,
+        precio: 1300,
         imagen: ''
     },
     {
         id: 5,
         nombre: 'Entrada General Atika',
-        precio: 1000,
+        precio: 2000,
         imagen: ''
     },
     {
@@ -66,19 +47,19 @@ const baseDeDatos = [
     {
         id: 8,
         nombre: 'Entrada VIP Fiesta Napoles',
-        precio: 3000,
+        precio: 4500,
         imagen: ''
     },
     {
         id: 9,
         nombre: 'Entrada General La Posta UADE',
-        precio: 3000,
+        precio: 1000,
         imagen: ''
     },
     {
         id: 10,
         nombre: 'Entrada VIP La Posta UADE',
-        precio: 3000,
+        precio: 2500,
         imagen: ''
     },
     {
@@ -90,7 +71,7 @@ const baseDeDatos = [
     {
         id: 6,
         nombre: 'Entrada VIP Electronica',
-        precio: 3000,
+        precio: 5000,
         imagen: ''
     },
 
@@ -232,3 +213,23 @@ DOMbotonFinalizar.addEventListener('click', finalizarCompra);
 renderizarProductos();
 renderizarCarrito();
 
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+const alert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    alert('Su compra ha sido guardada con exito!', 'success')
+  })
+}
