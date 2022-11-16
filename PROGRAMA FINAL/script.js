@@ -63,13 +63,13 @@ const baseDeDatos = [
         imagen: ''
     },
     {
-        id: 6,
+        id: 11,
         nombre: 'Entrada General Electronica',
         precio: 3000,
         imagen: ''
     },
     {
-        id: 6,
+        id: 12,
         nombre: 'Entrada VIP Electronica',
         precio: 5000,
         imagen: ''
